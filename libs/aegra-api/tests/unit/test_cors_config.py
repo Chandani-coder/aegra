@@ -234,7 +234,6 @@ async def test_default_cors_credentials_false_with_wildcard_origins(isolated_mod
 async def test_cors_credentials_false_with_mixed_wildcard_origins(
     isolated_module_reload: Path,
 ) -> None:
-    """Test that allow_credentials defaults to False when origins include a wildcard."""
     tmp_path = isolated_module_reload
 
     config_file = tmp_path / "aegra.json"
